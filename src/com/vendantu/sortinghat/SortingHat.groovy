@@ -16,6 +16,7 @@ class SortingHat {
         }
         sc.close()
 
+        //store student records
         List<Map> studentRegisterData = [];
         studentRegisterData = (0..(numberOfElements - 1)).collect { it ->
             List<String> studentList = studentRegisterDataInput[it].split(" ").toList();
@@ -26,6 +27,7 @@ class SortingHat {
             student
         }
 
+        //sort the student based on criteria
         Integer capacity = 3;
         Map<String, List> result = [BV: [], AV: [], BNV: [], ANV: [], NA: []];
 
